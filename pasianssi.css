@@ -1,0 +1,38 @@
+body{
+    background-color:bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+margin-top: 1%;
+margin-bottom: 1%;
+margin-left: 5%;
+margin-right: 5%;
+line-height: 150%;
+}
+.navigointipalkki ul{
+    list-style-type: none;
+    overflow:hidden;
+    background-color: #ffc123;
+}
+.navigointipalkki li{
+    float: left;
+}
+.navigointipalkki a{
+color: white;
+padding: 0 45px;
+text-decoration: none;
+}
+.navigointipalkkia a:hover {
+background-color: #19171e;
+}
+.kuva {
+float: left;
+margin: 0 25px;
+}
+.video {
+width: 512px;
+height: 288px;
+float: left;
+position: relative;
+padding:0px;
+margin: 20px;
+color: bisque;
+}
