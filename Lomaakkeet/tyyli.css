@@ -1,0 +1,10 @@
+form{
+ background-color: bisque;
+ padding: 20px; 
+ width: 35%;
+
+}
+label{
+    display: inline-block;
+    width: 120px;
+}
