@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lomakkeet</title>
+    <script src="kirjaudu.js"></script>
+    <style>
+        label{
+            display: inline-block;
+            width: 120px;
+        }
+        button{
+            margin-left: 123px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="ktunnus">Käyttätunnus:</label>
+        <input type="text" id="ktunnus" placeholder="kirjoita tähän Käyttätunnus"><br>
+        <label for="password">Salasana:</label>
+        <input type="text" id="password" placeholder="kirjoita tähän salasana">
+        <br><button onclick=tarkasta()>Tarkista</button>
+    </form>
+</body>
+</html>

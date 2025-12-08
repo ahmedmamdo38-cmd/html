@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirjautumislomake</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    h1{
+font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  color: red;
+}
+   #vari{
+    background-color: yellow;
+} 
+.lähetä{
+    background-color: yellow;
+}
+.painaminua{
+    background-color: beige;
+}
+    </style>
+    
+</head>
+<body>
+    <form>
+        <h1>Kirjautumislomake</h1>
+        <label for="name">Nimi:</label>
+        <br/><input type="text" name="name" id="vari">
+        <br/><label for="password">Salasana:</label>
+        <br/><input type="text" name="password" id="password">
+        <br/><label for="kone">Tätä tietoa ei näytetä käyttäjälle.Millainen koneen käyttäjä olet?</label>
+        <br/><input type="radio" name="kone" id="kone">himopelaaja
+        <br/><input type="radio" name="kone" id="kone">käytän opiskeluun
+        <br/><input type="radio" name="kone" id="kone">en käytä konetta
+        <label for="mieli">Mitä mieltä</label>
+        <br/><label for="mieli2">MItä mieltä olet sivustani tähän asti?</label>
+        <br/><input type="checkbox">Todella hienot
+        <br/><input type="checkbox">Ammattimaisesti tehty
+        <br/><input type="checkbox">Ostan sinulta!
+        <br/><label for="keuda">Mikä on lempiaineesi Keudassa?</label>
+        <br/><select name="keuda" id="keuda">
+            <option value="ammattiaineet">ammattiaineet</option>
+            <option value="suomenkieli">suomenlieli</option>
+            <option value="matika">mtika</option>
+            <option value="englanti">englanti</option>
+            <option value="S2">S2 </option>
+        </select>
+        <br/><label for="kehitäminen">Kerro, miten kehittäisit sivujani?</label>
+        <br/><textarea name="kehitäminen" id="kehitäminen"></textarea>
+        <br/><input type="button" class="painaminua" value="Paina minua">
+        <input type="button" class="lähetä" value="lähetä">
+
+
+
+    </form>
+</body>
+</html>
