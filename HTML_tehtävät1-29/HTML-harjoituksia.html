@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Harjoitellu sivu">
+    <meta name="author" content="Ahmed">
+    <title>Tervetuloa</title>
+    <style>
+form{
+ background-color: bisque;
+ padding: 20px; 
+ width: 35%;
+
+}
+label{
+    display: inline-block;
+    width: 120px;
+}
+h1{font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+form th{
+ background-color:burlywood;
+ padding:20px;
+ width: 35%;
+}
+form td{
+    background-color:skyblue;
+}
+main{
+    display: grid;
+    grid-template-areas: "header header"
+    "nav nav"
+    "article aside"
+    "footer footer";
+    grid-template-columns: 4fr 2fr;
+    gap: 0px;
+
+}
+aside{
+    grid-area: aside;
+    background-color:beige ;
+    padding: 10px;
+
+}
+header{
+    grid-area: header;
+    text-align: center;
+    background-color:skyblue;
+    color:black;
+    margin-top: 0px;
+}
+nav{
+    grid-area: nav;
+    background-color:skyblue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+article{
+    grid-area: article;
+    text-align: left;
+    background-color:bisque ;
+    padding: 10px;
+
+
+}
+nav{
+ width: 700px;
+ margin: 0 auto;
+}
+nav ul{
+    list-style-type: none;
+
+}
+nav ul a{
+    text-decoration: none;
+    color: black;
+    float: left;
+    margin: 0 40px;
+
+}
+    </style>
+</head>
+<body>
+<main>
+
+    <header>
+        <nav>
+            <ul>
+                <li>Minusta</li>
+                <li>Videot</li>
+                <li>Curriculum</li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+    <h1>Tämä on minun ensimmäinen HTML-sivuni.</h1>
+    <h1>H1</h1>
+    <h2>H2</h2>
+    <h3>H3</h3>
+    <h4>H4</h4>
+    <h5>H5</h5>
+    <h6>H6</h6>
+    
+    <a href="https://www.google.com/">Google</a>
+    <img src="images.jpg" alt="google icon">
+
+    <ol>
+        <li>Linkit</li>
+        <li>Kuvat</li>
+        <li>Lomaakkeet</li>
+    </ol>
+
+    <ul>
+        <li>Shwarma</li>
+        <li>Kebab</li>
+        <li>Liha</li>
+    </ul>
+
+    <table border="1">
+        <tr>
+            <th>Nimi</th>
+            <th>Lempi auto</th>
+        </tr> 
+
+        <tr>
+            <td>Ahmed</td>
+            <td>Porshe</td>
+        </tr>
+
+        <tr>
+            <td>Haben</td>
+            <td>Mitään vain</td>
+        </tr> 
+
+        <tr>
+            <td>Sami</td>
+            <td>Pienet autot</td>
+        </tr>
+    </table>
+    <a href="https://www.google.com/">
+    <img src="images.jpg" alt="klikka">
+    </a>
+
+    <form>
+        <label for="nimi">Nimi:</label>
+        <input type="text" id="nimi">
+        <input type="submit" value="Lähetä">
+    
+        <br><label for="palautta">Anna palautta:</label>
+        <textarea name="palautta" id="palautta"></textarea>
+        <input type="submit" value="Lähetä">
+    
+        <br><label><input type="radio" name="sukupuoli" value="mies">Mies</label>
+        <label><input type="radio" name="sukupuoli" value="nainen">Nainen</label>
+   
+        <label ><h3>Urheilut</h3></label>
+        <br><label><input type="checkbox" name="harrastus" id="jalkapallo">Jalkapalon pelaminen</label>
+        <br><label><input type="checkbox" name="harrastus" id="Koripallo">Koripallon pelaminen</label>
+        <br><label><input type="checkbox" name="harrastus" id="lukeminen">Kirjan lukeminen</label>
+
+        <br><label for="vari">Valitse lempiväri:</label>
+        <select name="vari" id="vari">
+            <option value="punainen">Punainen</option>
+            <option value="sininen">Sininen</option>
+            <option value="musta">Musta</option>
+            <option value="valkoinen">Valkoinen</option>
+        </select>
+
+
+        <label for="email">Sähköposti:</label>
+        <br><input type="text" id="email" name="email" required>
+        <input type="submit"  value="Lähetä">
+        
+    </form>
+    <ul>
+            <li>Vihannekset
+            <ul>
+                <li>Kurkku</li>
+                <li>Tomatti</li>
+                <li>Jäävuorisalatti</li>
+            </ul>
+            </li>
+            <li>Hedelmät
+                <ul>
+                    <li>Omena</li>
+                    <li>Applesiini</li>
+                    <li>Vesimeloni</li>
+                </ul>
+            </li>
+        </ul>
+        <!--Kommentti-->
+
+        <p style="font-family: Arial;">Tämä teksti on Arial-fontilla.</p>
+        <div>
+            <h1>Tämä on Divi</h1>
+            <p>Div</p>
+        </div>
+
+    <p>Tämä on <span style="color: blue;">sininen</span> sana.</p>
+
+    <iframe src="https://lumoakatemia.eu/index.php?option=com_splms&view=lesson&id=130:html-harjoituksia&Itemid=101" frameborder="400"></iframe>
+        <button onclick="alert('Hei maailma')">Paina</button>
+
+        <p style="color: red; font-size: 25px;">Tämä on punainen ja isompi teksti.</p>
+        <a href="https://lumoakatemia.eu/index.php?option=com_splms&view=lesson&id=130:html-harjoituksia&Itemid=101" target="_blank">Uusi välilehdet.</a>
+        </article>
+
+        <aside>
+            <h2>Tämä on reel Instagramista.</h2>
+        <video width="400" height="1000" controls>
+            <source src="MoSalah.mp4" type="video/mp4">
+            Somesta reeli.
+        </video>
+
+        <h2>UEFA Champions League</h2>
+        <audio controls>
+            <source src="UEFA Champions League Anthem.mp3" type="audio/mpeg">
+            UEFA Champions League Anthem songs.
+        </audio>
+    </aside>
+
+
+    </main>
+</body>
+</html>
