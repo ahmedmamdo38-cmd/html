@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+main{
+    display: grid;
+    grid-template-areas: "header header"
+    "nav nav"
+    "article aside"
+    "footer footer";
+    grid-template-columns: 4fr 2fr;
+    gap: 0px;
+
+}
+header{
+    grid-area: header;
+    text-align: center;
+    background-color: #ffdb89;
+    color:#030303;
+    margin-top: 0px;
+    font-size: larger;
+    font-family: serif;
+    font-weight: 10px;
+}
+nav{
+    grid-area: nav;
+    background-color:#ffdb89;
+    color:#030303;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    
+}
+article{
+    grid-area: article;
+    text-align: left;
+    background-color: #2c2c2e;
+     color:#ffdb89;
+    padding: 10px;
+
+
+}
+aside{
+    grid-area: aside;
+    background-color:#423f3d ;
+    color: #fed81f;
+    padding: 10px;
+
+}
+footer{
+    grid-area: footer;
+    text-align: center;
+    background-color: #ffdb89;
+    color: #030303;
+}
+
+nav{
+ width: 700px;
+ margin: 0 auto;
+}
+
+nav ul{
+
+    list-style-type: none;
+
+}
+
+nav ul a{
+    text-decoration: none;
+    color: black;
+    float: left;
+    margin: 0 40px;
+
+}
+h2, h3{
+    font-family:serif;
+    font-weight: 9px;
+}
+    </style>
+    <title>HTML</title>
+</head>
+<body>
+   <main>
+    <header>
+        <h1>HTML</h1>
+        <nav>
+            <ul>
+                <li><a href="TietoHTML.html">Tieto HTML:stä</a></li>
+                <li><a href="JavaScript.html">Tieto JavaScriptistä</a></li>
+                <li><a href="CSS.html">Tieto CSS:sta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <article>
+        <h2>HTML Historia</h2>
+        <p>Tim Berners-Lee keksi "World Wide Webin" vuonna 1989, ja ensimmäiset kytkökset tuli vuonna 1990.</p>
+            <p>Vuodesta 1991-1998, HTML kehittyi versiosta 1, aina 4:seen asti!</p>
+            <p>Vuonna 2000, tuli XHTML 1.0.</p>
+            <p>WHATWG yhdistys halusi tehdä HTML kielestä sen ainoan jolla nettiin jotain kirjoitettaisiin, ja kuitenkin päivitysten yhteydessä se toimisi aina vanhempien selainten kanssa</p>
+            <p>Aikakautena 2004-2006, WHATWG sai suurimmilta selaimilta täyden tuen heidän idealleen..</p>
+            <p> 2006, W3C ilmoitti tukevansa WHATWG yhdistystä.</p>
+            <p>2008, ensimmäinen HTML5 julkinen vedos julkaistiin.</p>
+            <p>2012, WHATWG ja W3C päättivät:</p>
+        
+            <h4><strong>WHATWG määrittää HTML kielen eläväksi standardiksi.</strong></h4>
+            <p>Elävä standardi ei ole koskaan valmis, mutta aina päivittyvä ja parantuva. Uutta voidaan aina lisätä mutta vanhat ominaisuudet eivät häviä koskaan.</p>
+            <p><u><a href="https://html.spec.whatwg.org/multipage/" target="_blank">WHATWG Living Standard </a></u> julkaisiin 2012, ja päivittyy usein.</p>
+
+            <h4>HTML versioita:</h4>
+            <p>Vuodesta 1980, on meillä ollut monia eri html versioita</p>
+            <table border="1">
+                <tr>
+                    <th><strong>Versio</strong></th>
+                    <th><strong>Vuosi</strong></th>
+                </tr>
+
+                <tr>
+                    <td>Tim Berners-Lee keksi internetin</td>
+                    <td>1989</td>
+                </tr>
+
+                <tr>
+                    <td>Tim Berners-Lee keksi HTML kielen</td>
+                    <td>1991</td>
+                </tr>
+
+                <tr>
+                    <td>Dave Raggett kirjoitti HTML+ kielen</td>
+                    <td>1993</td>
+                </tr>
+
+                <tr>
+                    <td>HTML yhdistys määritteli HTML 2.0 kielen</td>
+                    <td>1995</td>
+                </tr>
+
+                <tr>
+                    <td>W3C Valmisteli HTML 3.2 kielen</td>
+                    <td>1997</td>
+                </tr>
+
+                <tr>
+                    <td>W3C Valmisteli HTML 4.01 kielen</td>
+                    <td>1999</td>
+                </tr>
+
+                <tr>
+                    <td>W3C Valmisteli XHTML 1.0 kielen</td>
+                    <td>2000</td>
+                </tr>
+
+                <tr>
+                    <td>HTML5 kielen ensimmäinen julkinen esiintyminen</td>
+                    <td>2008</td>
+                </tr>
+
+                <tr>
+                    <td>HTML5 kielestä alettiin tekemään standardia</td>
+                    <td>2012</td>
+                </tr>
+
+                <tr>
+                    <td>HTML5 kielestä tuli standardi!</td>
+                    <td>2014</td>
+                </tr>
+            </table>
+
+
+           
+    </article>
+
+    <aside>
+             <h2> Mikä se on HTML? </h2>
+            <p>Html tulee englanninkielen sanoista <i> Hypertext Markup Language </i>.</p>
+               <p>Html on kuvauskieli. Sen avulla kuvataan nettisivun rakenne sekä sivun sisältämä sisältö.</p>
+               <p>Html-kieli on tarkoitettu alunperin tekstin muokkausta varten eli kuinka teksti näkyy lukijalle. Nykyään nettisivut tukevat monipuolisempaa sisältöä kuten videoita, lomakkeita jne.</p>
+               <p>Sivun muoto, koko, värit, fontin, kuvien koot ja paikat kuvataan CSS-kielellä. CSS-tyylit kirjoitetaan yleensä omaan erilliseen tiedostoon ja liitetään nettisivulle. Html-kielellä määritellään siis nettisivun sisällön rakenne, mutta sisällön tyylittelyt luodaan CSS-kielellä.</p>
+    </aside>
+
+
+    <footer>
+ <h1>Created by Mamo-design</h1>
+    <p>
+          Copyright &copy;Ahmed Mamdo 2025 - Kaikki oikeudet pidätetään<br />
+          <a href="mailto:ahmed.mamdo@edu.keuda.fi">Ota yhteyttä</a>
+        </p>
+</footer>
+    </main>
+</body>
+</html>
