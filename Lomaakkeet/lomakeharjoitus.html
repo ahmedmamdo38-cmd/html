@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harjoitus</title>
+    <link rel="stylesheet" href="tyyli.css"
+</head>
+<body>
+    <form>
+        <h1>Ohjelmointikokemukset</h1>
+        <br/><label for="nimi">Nimi:</label>
+        <input type="text" name="nimi" id="nimi" placeholder="kirjoittaja nimi" >
+        
+        <br/><label for="age">Ikä:</label>
+        <input type="text" name="age" id="age">
+
+        <br/><label for="address">Osoite:</label>
+        <textarea name="address" id="address">kirjoit tähän</textarea>
+        
+        <br/><label for="gmail">Sähköposti:</label>
+        <input type="email" name="address" id="address" value="name@example.com">
+
+        <br/><label for="phonen">Puhelinnumero:</label>
+        <input type="tel" name="phonen" id="phonen">
+
+        <br/><label for="gender">Sukupouli:</label>
+        <input type="radio" name="gender" id="gender-m">Mies
+        <input type="radio" name="gender" id="gender-n">Nainen
+
+        <br/><label for="koulutus">Koulutus (ilmoita myös valmistumisvuodet):</label>
+        <textarea name="koulutus" id="koulutus" ></textarea>
+
+        <br/><label for="syntax">Olen kuullut seuraavista ohjelmointikielistä aikaisemmin:</label>
+         <input type="checkbox"/>Java /C# <br/>
+        <input type="checkbox" />Pyhthon <br/>
+        <input type="checkbox" />C/C++ <br/>
+        <input type="checkbox" />Perl <br/>
+        <input type="checkbox" />Pascal/Delphi  <br/>
+
+        <br/><label for="syntax2">Mieluisin ohjelmointikielistä minulle on:</label>
+        <input type="radio" name="sybtax2" id="syntax2"/>Java /C# <br/>
+        <input type="radio" name="sybtax2" id="syntax2"/>Pyhthon <br/>
+        <input type="radio" name="sybtax2" id="syntax2"/>C/C++ <br/>
+        <input type="radio" name="sybtax2" id="syntax2"/>Perl  <br/>
+        <input type="radio" name="sybtax2" id="syntax2"/>Pascal/Delphi <br/>
+
+        <br/><label for="taso">Ohjelmointikokemukseni seuraavilla kielillä (asteikolla 1...5: 1 – ei yhtään, 3 – jonkin verran, 5 – paljon):</label>
+        <br/><input type="range" min="1" max="5" name="taso" id="taso" />Java/C#
+        <br/><input type="range" min="1" max="5" />Pyhthon
+        <br/><input type="range" min="1" max="5" />C/C++
+        <br/><input type="range" min="1" max="5" />Perl 
+        <br/><input type="range" min="1" max="5" />Pascal/elphi
+
+
+    </form>
+</body>
+</html>

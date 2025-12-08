@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekisteröintilomake</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <form>
+        <table border="1">
+        <tr>
+            <th colspan="2">Rekisteröintilomake</th>
+        </tr>
+
+        <tr>
+            <td><label for="animi">Anna nimi:</label></td>
+            <td><input type="text" name="animi" id="animi"></td>
+        </tr>
+
+        <tr>
+            <td><label for="asalasana">Anna salasana:</label></td>
+            <td><input type="text" name="asalasana" id="asalasana"></td>
+        </tr>
+
+        <tr>
+            <td><label for="aosoite">Anna osoite:</label></td>
+            <td><textarea name="aosoite" id="aosoite" rows="3" cols="35"></textarea></td>
+
+
+
+
+        </tr>
+
+        <tr>
+        <td><label for="vpeli">Valitse peli:</label></td>
+        <td>
+            <input type="checkbox" /> Jääkiekko <br/>
+            <input type="checkbox"  /> Jalkapallo <br/>
+            <input type="checkbox"  /> Sulkapallo <br/>
+            <input type="checkbox"  /> Squash <br/>
+            <input type="checkbox"  /> Lentapallo <br/>
+        </td>
+        </tr>
+
+        <tr>
+            <td><label for="spouli">Sukupouli:</label></td>
+            <td><input type="radio" />Mies <input type="radio" />Nainen</td>
+        </tr>
+
+        <tr>
+            <td><label for="age">Ikä:</label></td>
+            <td><select name="age" id="age">
+            <option value="alle18">7-17</option>
+            <option value="alle30">18-29</option>
+            <option value="alle65">30-64</option>
+            <option value="yli65">65- vuotias</option>
+        </select></td>
+        </tr>
+
+        <tr>
+            <td><label for="vkuva">Valitse kuva:</label></td>
+            <td><input type="file" name="vkuva" id="vkuva"></td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><input type="button" value="Napauta minua"> <input type="button" value="Resetoi"> <input type="button" value="Lähetä"></td>
+        </tr>
+
+
+
+
+    </form> 
+</table>
+</body>
+</html>
