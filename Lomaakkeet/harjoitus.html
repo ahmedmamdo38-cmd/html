@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tyyli.css">
+</head>
+<style>
+</style>
+<body>
+    <form>
+        <h1>Lomakkeet</h1>
+        <label for="enmi">Etunimi:</label>
+        <input type="text" name="enimi" id="enimi" ><br/>
+        <label for="snimi">Sukunimi</label>
+        <input type="text" name="snimi" id="snimi"><br/>
+        <label for="ktunnus">Käytäjätunnus</label>
+        <input type="text" name="ktunnus" id="ktunnus"><br/>
+        <label for="ssana">Salasana</label>
+        <input type="password" name="ssana" id="ssana"><br/>
+        <label for="spouli">Sukupouli</label>
+        <input type="radio" name="spouli" id="spouli-m">Mies <br/>
+        <input type="radio" name="spouli" id="spouli-n">Nainen <br/>
+        <label for="palaute">Palaute</label>
+        <textarea name="palaute" id="palaute" cols="30" rows="10"></textarea>
+        <label for="jtaso">Jäsenyystaso</label>
+        <select name="jtaso" id="jtaso">
+            <option value="">--Valitse--</option>
+            <option value="admin">Admin</option>
+            <option value="kayttaja">Käyttäjä</option>
+            <option value="testi">Testi</option>
+        </select><br/>
+        <label for="oalueet">Osaanisalueet</label>
+        <input type="checkbox" name="PHP" id="php">PHP
+        <input type="checkbox" name="HtML" id="html">HTML
+        <input type="checkbox" name="CSS"  id="css">CSS <br/>
+        <input type="submit" > <input type="reset">
+
+
+
+
+    </form>
+</body>
+</html>
