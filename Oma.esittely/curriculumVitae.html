@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <style>
+         body{
+           background: linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 100%); 
+           color: #e0e0e0;
+           margin: 0;
+           padding: 0;
+        }
+        header{
+            position: relative;
+            padding: 80px 20px;
+            background: #16213e;
+        }
+        h1{
+            text-align: center;
+            position: relative;
+            font-family: 'Space Grotesk', sans-serif;
+            text-transform: uppercase;
+            color:#5ec4f5 ;
+        }
+         h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            color: #5ec4f5;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+         h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            color: #5ec4f5;
+            margin-bottom: 15px;
+        }
+         p {
+            margin-bottom: 20px;
+            color: #c0c0c0;
+            font-size: 1.05rem;
+        }
+        strong{
+            color: #5ec4f5;
+        }
+        .container{
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(94, 196, 245, 0.2);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0px;
+        }
+        
+        /* Image Grid Layout */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .image-item {
+            text-align: center;
+            background: rgba(94, 196, 245, 0.05);
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid rgba(94, 196, 245, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .image-item:hover {
+            transform: translateY(-5px);
+            border-color: rgba(94, 196, 245, 0.4);
+        }
+        
+        .image-item img {
+            width: 100%;
+            max-width: 285px;
+            height: 170px;
+            object-fit: contain;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .image-item figcaption {
+            color: #5ec4f5;
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-top: 10px;
+        }
+        
+        /* Container with sidebar layout */
+        .container-with-sidebar {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 30px;
+            align-items: start;
+        }
+        
+        @media (max-width: 768px) {
+            .container-with-sidebar {
+                grid-template-columns: 1fr;
+            }
+            
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Aside Styles */
+        aside {
+            background: rgba(94, 196, 245, 0.05);
+            border: 1px solid rgba(94, 196, 245, 0.3);
+            border-radius: 15px;
+            padding: 25px;
+            position: sticky;
+            top: 20px;
+        }
+        
+        aside h3 {
+            color: #5ec4f5;
+            font-family: 'Space Grotesk', sans-serif;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        aside p {
+            color: #c0c0c0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        aside .info-item {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(94, 196, 245, 0.2);
+        }
+        
+        aside .info-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        aside .info-label {
+            color: #00d4ff;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+        
+        aside .highlight {
+            background: rgba(94, 196, 245, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+       .container_nav{
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(94, 196, 245, 0.2);
+            border-radius: 20px;
+            padding: 10px;
+            margin: 10px 0px;
+        }
+        #container_nav{
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 5px 20px;
+        }
+        nav{
+            grid-area: nav;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+        nav ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        nav ul li{
+            margin: 0;
+            padding: 0;
+        }
+        nav ul a{
+            text-decoration: none;
+            color: #5ec4f5;
+            padding: 10px 15px;
+            display: inline-block;
+            background: rgba(94, 196, 245, 0.1);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        nav ul a:hover{
+            background: rgba(94, 196, 245, 0.2);
+            color: #00d4ff;
+        }
+         main{
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+         }
+         
+         ul {
+            margin: 15px 0 25px 20px;
+        }
+        li {
+            margin: 10px 0;
+            color: #c0c0c0;
+            position: relative;
+            padding-left: 10px;
+        }
+         
+         footer {
+            background: linear-gradient(135deg, rgb(22, 33, 62) 0%, rgb(15, 52, 96) 100%);
+            margin-top: 60px;
+            padding: 40px 20px;
+            border-top: 2px solid rgba(94, 196, 245, 0.3);
+            text-align: center;
+        }
+        
+        footer h2 {
+            margin-top: 0;
+        }
+        
+        footer a {
+            color: #5ec4f5;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            color: #00d4ff;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Ahmed Mamdo</h1>
+        </header>
+
+           <nav>
+            <ul>
+                <li><a href="homePage.html">Koti</a></li>
+                <li><a href="aboutME.html">Minusta</a></li>
+                <li><a href="hobbies.html">Harrastukseni</a></li>
+                <li><a href="curriculumVitae.html">Curriculum Vitae</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <div class="container">
+                <h1>Opiskelu ja työ</h1>
+
+                <h3>Opiskeluhistoriani</h3>
+                <p>Aloitin opiskelemaan Turkissa "Mehmetcik Ilkokulu" alakoulussa, sitten menin opiskelemaan "Ibn-i Sina Ortaokulu" ylekolussa 6.luokka asti.
+                    Kun tulin Suomen opikelin "Johan Ahon" koulussa noin 6 kuukautta. Opiskelin Jokelassa "Jokelan koulukeskuksessa" noin 8 kuukautta ja sitten Stepin järvenpässa noin 1,5 vuotta.
+                    Nyt opikelen Keudassa sarviniitynkatussa.</p>
+
+                <div class="image-grid">
+                    <figure class="image-item">
+                        <a href="https://konakmehmetcik.meb.k12.tr/tema/index.php">
+                            <img src="meb-logo.png" alt="Mehmetcik koulu meb-logo">
+                        </a>
+                        <figcaption>Mehmetcik Koulu</figcaption>
+                    </figure>
+
+                    <figure class="image-item">
+                        <a href="https://konakibnisina.meb.k12.tr/">
+                            <img src="meb-logo.png" alt="Ibn-i Sina koulu meb-logo">
+                        </a>
+                        <figcaption>Ibn-i Sina Ylekoulu</figcaption>
+                    </figure>
+
+                    <figure class="image-item">
+                        <a href="https://iisalmi.fi/osasto/juhani-ahon-koulu/">
+                            <img src="lisalmi.webp" alt="Lisalmi kuntan logo">
+                        </a>
+                        <figcaption>Johan Ahon koulu (Lisalmi kuntan logo)</figcaption>
+                    </figure>
+
+                    <figure class="image-item">
+                        <a href="https://tuusula.fi/etusivu/varhaiskasvatus-ja-oppiminen/perusopetus/koulut/jokelan-ylaaste/">
+                            <img src="OIP.webp" alt="Jokelan kansalaisopisto logo">
+                        </a>
+                        <figcaption>Jokelan koulukeskus (Jokelan kansalaisopisto logo)</figcaption>
+                    </figure>
+
+                    <figure class="image-item">
+                        <a href="https://step.fi/tietoa-meista/kampukset-ja-toimipaikat/jarvenpaan-kampus/">
+                            <img src="step-koulutus.webp" alt="step-koulutus">
+                        </a>
+                        <figcaption>Step koulutus</figcaption>
+                    </figure>
+
+                    <figure class="image-item">
+                        <a href="https://www.keuda.fi/">
+                            <img src="keuda logo.webp" alt="Keuda">
+                        </a>
+                        <figcaption>Keuda</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="container">
+                <h3>Samana päivänä kuolleita, kun Ahmed on syntynyt, mutta eri vuonna</h3>
+                <ul>
+                    <li><strong>Robert Johnson</strong>, legendaarinen bluesmuusikko, kuoli vuonna 1938. Häntä pidetään yhtenä vaikutusvaltaisimmista kitaristeista ja lauluntekijöistä bluesin historiassa. 
+                    Hänen mystinen elämänsä ja kuolemansa ovat synnyttäneet monia legendoja.</li>
+                    <li><strong>Hugo Gernsback</strong>, tieteiskirjallisuuden pioneeri, kuoli vuonna 1967. 
+                    Hän perusti ensimmäisen sci-fi-lehden ja hänen mukaansa on nimetty Hugo-palkinto, joka jaetaan vuosittain parhaalle tieteiskirjallisuudelle.</li>
+                    <li><strong>Sheikh Mujibur Rahman</strong>, Bangladeshin perustaja ja ensimmäinen presidentti, murhattiin vuonna 1975 vallankaappauksessa. Hänet muistetaan maan itsenäisyyden arkkitehtina.</li>
+                    <li><strong>Elvis Presley</strong>, rockin kuningas, kuoli vuonna 1977. 
+                    Hänen kuolemansa Gracelandissa järkytti maailmaa, ja hänestä tuli kulttuuri-ikoni, jonka vaikutus näkyy edelleen musiikissa ja populaarikulttuurissa.</li>
+                    <li><strong>Richard Feynman</strong>, Nobel-palkittu fyysikko, kuoli vuonna 1988. 
+                        Hän oli tunnettu paitsi tieteellisistä saavutuksistaan myös kyvystään selittää monimutkaisia asioita yksinkertaisesti ja innostavasti.</li>
+                    <li><strong>John Hume</strong>, pohjoisirlantilainen poliitikko ja rauhanaktivisti, kuoli vuonna 2020. 
+                        Hän oli keskeinen hahmo Pohjois-Irlannin rauhanprosessissa ja sai Nobelin rauhanpalkinnon vuonna 1998.</li>
+                </ul>
+            </div>
+        </article>
+    </main>
+
+     <footer>
+        <h2>Created by JPL-design</h2>
+        <p>Copyright &copy; Ahmed Mamdo 2025 - Kaikki oikeudet pidätetään<br />
+        <a href="mailto:ahmed.mamdo@edu.keuda.fi">Ota yhteyttä</a></p>
+    </footer>
+</body>
+</html>

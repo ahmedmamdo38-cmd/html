@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis For Two</title>
+    <style>
+        body{
+           background: linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 100%); 
+           color: #e0e0e0;
+        }
+        header{
+            position: relative;
+            padding: 80px 20px;
+            background: #16213e;
+        }
+        main{
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+        h1{
+            text-align: center;
+            position: relative;
+            font-family: 'Space Grotesk', sans-serif;
+            text-transform: uppercase;
+            color:#5ec4f5 ;
+        }
+        .container{
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(94, 196, 245, 0.2);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0px;
+        }
+        #container{
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 30px;
+
+        }
+        h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            color: #5ec4f5;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        h4 {
+            font-family: 'Space Grotesk', sans-serif;
+            color: #00d4ff;
+            margin: 25px 0 15px;
+            font-size: 1.3rem;
+        }
+         p {
+            margin-bottom: 20px;
+            color: #c0c0c0;
+            font-size: 1.05rem;
+        }
+         ul {
+            margin: 15px 0 25px 20px;
+        }
+        li {
+            margin: 10px 0;
+            color: #c0c0c0;
+            position: relative;
+            padding-left: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        th {
+            background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
+            color: #5ec4f5;
+            padding: 18px;
+            text-align: center;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.95rem;
+        }
+         td {
+            padding: 18px;
+            text-align: center;
+            border-bottom: 1px solid rgba(94, 196, 245, 0.1);
+            color: #c0c0c0;
+        }
+        b {
+            color: #5ec4f5;
+            font-weight: 600;
+        }
+        .highlight-box {
+            background: rgba(94, 196, 245, 0.08);
+            border-left: 4px solid #5ec4f5;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>First Video Game <br> In History</h1>
+        </header>
+       
+            <div  class="container"  id="container1">
+                <img src="1st-videogame-940px.jpg" alt="1st-videogame">
+                <h2>Before 'Pong,' There Was 'Tennis for Two'</h2>
+                <p>Before the era of electronic ping pong, hungry yellow dots, plumbers, mushrooms, and fire-flowers, people waited in line to play video games at roller-skating rinks, arcades, and other hangouts. More than fifty years ago, before either arcades or home video games, visitors waited in line at Brookhaven National Laboratory to play “Tennis for Two,” an electronic tennis game that is unquestionably a forerunner of the modern video game.</p>
+                <p>Tennis for Two was first introduced on October 18, 1958, at one of the Lab’s annual visitors’ days. Two people played the electronic tennis game with separate controllers that connected to an analog computer and used an oscilloscope for a screen. The game’s creator, William Higinbotham, was a nuclear physicist lobbied for nuclear nonproliferation as the first chair of the Federation of American Scientists.</p>
+            </div>
+
+            <div class="container" id="container2">
+                <h2>Gameplay Characteris</h2>
+                <h4>Screen & Display</h4>
+                 <ul>
+                    <li>Shown on a 5-inch cathode-ray oscilloscope</li>
+                    <li>Side view: you see the <b>ball trajectory</b> going over a horizontal "ground" line</li>
+                    <li>Only a <b> moving dot</b> and a line — no characters, no net visible on early versions (a net was added in the 1959 update)</li>
+                 </ul>
+
+                 <h4>Controls</h4>
+                 <p>Each player had a handheld controller:</p>
+                 <ul> 
+                    <li>One button to strike the ball</li>
+                    <li>One <b>rotary knob</b> to choose hitting angle</li>
+                    <li>Timing mattered — press too late and you “missed”</li>
+                 </ul>
+
+                 <h4>Objective</h4>
+                 <div class="highlight-box">
+                    <p>Hit the ball so that it travels over the net and <b>lands within the opponent’s court.</b>
+                    If it lands outside or hits the net → that player loses a point.</p>
+                 </div>
+
+            </div>
+
+            <div class="container" id="container3">
+                <h2>Under The Hood</h2>
+                <p>Unlike later digital video games, this was driven by analog circuitry:</p>
+                <table border="1" id="cssTable">
+                    <tr>
+                        <th>Component</th>
+                        <th>Function</th>
+                    </tr>
+                    <tr>
+                        <td>Analog computer</td>
+                        <td>Calculated ball motion using real-time physics</td>
+                    </tr>
+                    <tr>
+                        <td>oscilloscope</td>
+                        <td>Displayed the ball's position as voltages controlling X and Y axes</td>
+                    </tr>
+                    <tr>
+                        <td>Custom circuitry</td>
+                        <td>Modeled gravity, bounce and air resistance</td>
+                    </tr>
+                </table>
+
+                <h4>Real Physics Simulation</h4>
+                <p>The computer calculated:</p>
+                <ul>
+                    <li><b>Parabolic trajectory</b>under gravity </li>
+                    <li>Bounce angles and velocity reduction</li>
+                    <li>Spin and wind were not simulated, but the flight  looked realistic</li>
+                </ul>
+                <div class="highlight-box">
+                    <p>This made it <b>surprisingly advanced </b>compared to many later early games</p>
+                </div>
+            </div>
+
+            <div class="container" id="container4">
+                <h2>Timeline and Public Reaction</h2>
+                <table border="1" id="cssTable">
+                    <tr>
+                        <th>Year</th>
+                        <th>Event</th>
+                    </tr>
+                    <tr>
+                        <td>1958</td>
+                        <td>First version displayed huge success with visitors</td>
+                    </tr>
+                    <tr>
+                        <td>1959</td>
+                        <td>Upgraded version: larger screen, added net, better visuals</td>
+                    </tr>
+                    <tr>
+                        <td>1960s</td>
+                        <td>Dismantled, parts reused for lab work</td>
+                    </tr>
+                    <tr>
+                        <td>1980s</td>
+                        <td>Recognized in video game history as a major milestone</td>
+                    </tr>
+                    <tr>
+                        <td>1997</td>
+                        <td>Game rebuilt for historical preservation</td>
+                    </tr>
+                </table>
+                <p>Visitors loved it long lines formed to play.Many described it as more fun than anything else at the exhibit.</p>
+                <div class="highlight-box">
+                      <p><b>But…</b>
+                Higinbotham never patented it, even though he easily could have which meant no commercial success or recognition at the time.</p>
+            </div>
+                </div>
+
+            <div class="container" id="container5">
+                <h2>Lecacy and Importance</h2>
+                <p>Tennis for Two introduced key ideas before they were common:</p>
+                <table border="1" id="cssTable">
+                     <tr>
+                        <th>Feature</th>
+                        <th><b>Tennis for Two</b></th>
+                        <th>Later in gaming</th>
+                     </tr>
+                     <tr>
+                        <td>Real-time interactive graphincs</td>
+                        <td>✔</td>
+                        <td>Standard today</td>
+                     </tr>
+                     <tr>
+                        <td>Entertaiment-focused software </td>
+                        <td>✔</td>
+                        <td>Gaming industry</td>
+                     </tr>
+                     <tr>
+                        <td>Competitive multiplayer </td>
+                        <td>✔</td>
+                        <td>Modern eSport</td>
+                     </tr>
+                     <tr>
+                        <td>Physics-based gameplay </td>
+                        <td>✔</td>
+                        <td>Sports sims</td>
+                     </tr>
+                </table>
+                <div class="highlight-box">
+                    <p><b>In short: </b>"Tennis for Two" was the creative spark a fun, public-facing demonstration of intreractive electronic. While not a commercial product, it stands as the direct conceptual forerunner to games like "Pong" and everythong that followed.</p>
+                </div>
+            </div>
+      
+    </main>
+</body>
+</html>
